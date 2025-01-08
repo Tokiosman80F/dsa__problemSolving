@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Pattern</title>
+  </head>
+  <body>
+    <script>
+      let print = parseInt(prompt("Enter the number of rows"));
+
+      for (let row = 0; row < print; row++) {
+        let stars = "";
+        for (let col = 0; col < print; col++) {
+          stars += "*";
+        }
+        console.log(stars);
+      }
+    </script>
+  </body>
+</html>
