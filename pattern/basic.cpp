@@ -101,22 +101,57 @@ int main(){
 		3 2 1
 		3 2 1
 	*/
-	int print;
-	cin>>print;		
+	// int print;
+	// cin>>print;		
 
-	for(int row=1;row<=print;row++)
+	// for(int row=1;row<=print;row++)
+	// {
+	// 	for (int col = 0; col < print; ++col)
+	// 	{
+	// 		cout<<print-col<<" ";
+
+	// 	}
+	// 	cout<<endl;
+	// }
+
+	// Pattern :5 
+	/*
+		1 2 3 
+		4 5 6 	
+		7 8 9 
+	
+	*/
+	// ------Nested loop
+	// int print;
+	// cin>>print;		
+	// int count=1;
+	// for (int row = 0; row < print; ++row)
+	// {
+	// 	for (int col = 0; col < print; ++col)
+	// 	{
+	// 		/* code */
+	// 		cout<<count<<" ";
+	// 		++count;
+	// 	}
+	// 	cout<<endl;		
+	// }
+
+	//----Single Loop (Logical Approach)
+
+	int print,count=1;
+	cin>>print;
+
+	for (int i = 1; i <= print*print; ++i)
 	{
-		for (int col = 0; col < print; ++col)
+		cout<<count<<" ";
+		if (i%print==0)
 		{
-			cout<<print-col<<" ";
-
+			cout<<endl;
 		}
-		cout<<endl;
+		++count;
 	}
 
-
 	return 0;
-
 	
 
 }
